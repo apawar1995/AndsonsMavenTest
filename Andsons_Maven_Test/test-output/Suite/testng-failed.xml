@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tests.VerifyHeaderElements">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="verifyOurChocolateMenuText"/>
+          <include name="closebrowser"/>
+          <include name="verifyVisitText"/>
+          <include name="launchBrowser"/>
+          <include name="endoftestCase"/>
+          <include name="clearPOMObject"/>
+          <include name="createPOMObjcts"/>
+          <include name="verifyAboutMenuText"/>
+        </methods>
+      </class> <!-- tests.VerifyHeaderElements -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
