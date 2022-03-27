@@ -14,6 +14,7 @@ public class Browser {
 			return driver ;
 		}
 		
+		
 		public static WebDriver launcFireFoxBrowser()
 		{
 			System.setProperty("webdriver.gecko.driver", "D:\\Drivers\\geckodriver.exe");
